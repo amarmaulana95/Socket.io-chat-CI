@@ -1,9 +1,6 @@
 # Simple-realtime-message-SocketIO-NodeJS-CI
 Simple realtime push message using [Socket.IO](http://socket.io/) ([Node.JS](https://nodejs.org/en/)) integrated with PHP ([Codeigniter](http://codeigniter.com/)) and database MySQL
 
-# Demo
-[Visit Here](https://www.youtube.com/watch?v=54yhqN3ITEQ)
-
 # Setup
 Download or clone [Master File](https://github.com/moemoe89/Simple-realtime-message-SocketIO-NodeJS-CI)
 and then config & import MySQL database 
