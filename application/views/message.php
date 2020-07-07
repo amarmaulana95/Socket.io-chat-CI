@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Simple Realtime Message</title>
+    <title>TES REALTIME</title>
     <link href="<?php echo base_url('assets/css/bootstrap.min.css');?>" rel="stylesheet">
   </head>
   <style>
@@ -13,7 +13,7 @@
   #load { height: 100%; width: 100%; }
   #load {
     position    : fixed;
-    z-index     : 99999; /* or higher if necessary */
+    z-index     : 99999; 
     top         : 0;
     left        : 0;
     overflow    : hidden;
@@ -40,12 +40,11 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-    <a class="navbar-brand" href="<?php echo base_url();?>message">Simple Realtime Message</a>
   </div>
 
   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
     <ul class="nav nav-pills pull-right" role="tablist">
-      <li role="presentation"><a href="#">New messages <span class="badge" id="new_count_message"><?php echo $this->db->where('read_status',0)->count_all_results('message');?></span></a></li>
+      <li role="presentation"><a href="#">PESAN <span class="badge" id="new_count_message"><?php echo $this->db->where('read_status',0)->count_all_results('message');?></span></a></li>
     </ul>
   </div>
 
@@ -61,8 +60,8 @@
             <th>Name</th>
             <th>Email</th>
             <th>Subject</th>
-            <th>Time</th>
-            <th>Read</th>
+            <th>DATE</th>
+            <th>R</th>
           </thead>
        
           <tbody id="message-tbody">
@@ -94,7 +93,7 @@
               <tr id="no-message-notif">
                 <td colspan="5" align="center"><div class="alert alert-danger" role="alert">
                   <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
-                  <span class="sr-only"></span> No message</div>
+                  <span class="sr-only"></span> PESAN</div>
                 </td>
               </tr>
               
@@ -112,7 +111,6 @@
 
 
 <hr>
-<footer class="text-center">Simple Realtime Message &copy 2015</footer>
 <hr>
 
   <script src="<?php echo base_url('assets/js/jquery-1.11.2.min.js');?>"></script>
@@ -192,37 +190,37 @@
   </body>
 </html>
 
-        <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">✕</button>
-                      <h4>Detail Message</h4>
-                  </div>
-                  
-                  <div class="modal-body" style="text-align:center;">
-                    <div class="row-fluid">
-                     <div class="span10 offset1">
-                       <div id="modalTab">
-                         <div class="tab-content">
-                           <div class="tab-pane active" id="about">
+<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">✕</button>
+              <h4>Detail PESAN</h4>
+          </div>
+          
+          <div class="modal-body" style="text-align:center;">
+            <div class="row-fluid">
+             <div class="span10 offset1">
+               <div id="modalTab">
+                 <div class="tab-content">
+                   <div class="tab-pane active" id="about">
 
-                            <center>
-                             <p class="text-left">
-                              <b>Name</b> : <span id="show_name"></span><br />
-                              <b>Email</b> : <span id="show_email"></span><br />
-                              <b>Subject</b> : <span id="show_subject"></span><br />
-                              <b>Message</b> : <span id="show_message"></span><br />
-                             </p>
-                             <br>
-                           </center>
-                  
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                    <center>
+                     <p class="text-left">
+                      <b>Name</b> : <span id="show_name"></span><br />
+                      <b>Email</b> : <span id="show_email"></span><br />
+                      <b>Subject</b> : <span id="show_subject"></span><br />
+                      <b>PESAN</b> : <span id="show_message"></span><br />
+                     </p>
+                     <br>
+                   </center>
+          
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+</div>

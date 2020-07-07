@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Simple Realtime Message</title>
+    <title>TES REALTIME</title>
     <link href="<?php echo base_url('assets/css/bootstrap.min.css');?>" rel="stylesheet">
   </head>
   <style>
@@ -39,42 +39,41 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-    <a class="navbar-brand" href="<?php echo base_url();?>">Simple Realtime Message</a>
   </div>
   </div>
 </nav>
     
-<center><a href="<?php echo site_url('message');?>">Click here to see the list message</a></center><br />
+<center><a href="<?php echo site_url('message');?>">WAREHOUSE NOTIF</a></center><br />
 <div class="container">
   <div class="row">
     <div id="notif"></div>
       <div class="col-md-6 col-md-offset-3">
-        <div class="well well-sm">
+        <div class="">
           <form class="form-horizontal">
           <fieldset>
-            <legend class="text-center">Contact us</legend>
+            <legend class="text-center">CUSTOMER FULL FILMENT</legend>
             <div class="form-group">
-              <label class="col-md-3 control-label" for="name">Name</label>
+              <label class="col-md-3 control-label" for="name">NAMA</label>
               <div class="col-md-9">
-                <input id="name" type="text" placeholder="Your name" class="form-control" autofocus>
+                <input id="name" type="text" placeholder="" class="form-control" autofocus>
               </div>
             </div>
             <div class="form-group">
-              <label class="col-md-3 control-label" for="email">E-mail</label>
+              <label class="col-md-3 control-label" for="email">EMAIL</label>
               <div class="col-md-9">
-                <input id="email" type="email" placeholder="Your email" class="form-control">
+                <input id="email" type="email" placeholder="" class="form-control">
               </div>
             </div>
             <div class="form-group">
-              <label class="col-md-3 control-label" for="subject">Subject</label>
+              <label class="col-md-3 control-label" for="subject">SUBJECT</label>
               <div class="col-md-9">
-                <input id="subject" type="text" placeholder="Your subject" class="form-control">
+                <input id="subject" type="text" placeholder="" class="form-control">
               </div>
             </div>
             <div class="form-group">
-              <label class="col-md-3 control-label" for="message">Your message</label>
+              <label class="col-md-3 control-label" for="message">PESAN</label>
               <div class="col-md-9">
-                <textarea class="form-control" id="message" name="message" placeholder="Please enter your message here..." rows="5"></textarea>
+                <textarea class="form-control" id="message" name="message" placeholder="isi pesan" rows="5"></textarea>
               </div>
             </div>
             <div class="form-group">
@@ -88,10 +87,6 @@
       </div>
   </div>
 </div>
-
-<hr>
-<footer class="text-center">Simple Realtime Message &copy 2015</footer>
-<hr>
 
   <script src="<?php echo base_url('assets/js/jquery-1.11.2.min.js');?>"></script>
   <script src="<?php echo base_url('assets/js/bootstrap.min.js');?>"></script>
@@ -120,7 +115,7 @@
             cache : false,
             success: function(data){
 
-              $( "#load" ).hide();
+              $("#load" ).hide();
               $("#name").val('');
               $("#email").val('');
               $("#subject").val('');
